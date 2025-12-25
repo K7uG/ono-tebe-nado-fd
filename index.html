@@ -2,9 +2,135 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c28c1860-1ea7-42d0-ae99-60875bb1591a&lang=ru_RU&load=Geolink"
+type="text/javascript"></script>
   </head>
-  <body></body>
+  <body class="root">
+<!--header----------------------class="grid1"-------------------->
+    <header class="header">
+      <div class="grid1">
+-        <nav class="navigation">
+          <ul >
+               <li><a href="#endel">Главная</a></li>
+               <li ><a href="#calm">Посмотреть лоты</a></li>
+               <li ><a href="#headspace">об аукционе</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+     <div class="grid2" >
+             <img class="card__image " src="./images/logo-black.svg" alt="лого" />
+        </div>
+      <div class="grid3" >
+          <adress >
+            <a href="tel:+9 999 555 5555" id="tel">+9 999 555 5555</a><br>
+            <a href="mailto:info@sobaka.ge" id="email">info@sobaka.ge</a><br>
+            <span class="ymaps-geolink  " map>наб. Принсенграхт 263- 265, Амстердам</span>
+          </adress>
+      </div>
+    </header>
+
+<!--main------------------------------------------>
+<main>
+<!--cover------->
+      <div class="grid4 cover" >
+        <div class="grid5 title">ОНО</div><br>
+        <div class="grid6 title"> тебе</div>
+        <div class="grid7 title"> НАДО</div>
+        <div class="grid8">Аукцион вещей в которые никто не верил</div>
+        <div class="grid9">Сделать ставку</div>
+      </div>
+
+<!--lots------------------------------------------>
+   <section class="section" >
+      <div class="grid10"><h2>ЛОты</h2> </div>
+        <div class="card endel">
+          <h3 class="card__title">ENDEL</h3>
+            <p class="card__text">
+            Интерактивная система обучения медитации. Приложение придумал Энди
+            Паддикомб, известный популяризатор медитации. Вы получаете
+            доходчивые инструкции и практикуете.
+            </p>
+        </div>
+
+        <div class="card calm">
+          <h3 class="card__title">calm</h3>
+          <p class="card__text">
+            Интерактивная система обучения медитации. Приложение придумал Энди
+            Паддикомб, известный популяризатор медитации. Вы получаете
+            доходчивые инструкции и практикуете.
+          </p>
+      </div>
+    
+      <div class="card headspace">
+          <h3 class="card__title">Headspace</h3>
+          <p class="card__text">
+            Интерактивная система обучения медитации. Приложение придумал Энди
+            Паддикомб, известный популяризатор медитации. Вы получаете
+            доходчивые инструкции и практикуете.
+          </p>
+      </div>
+      <div class="more"> посмотреть больше</div>
+    </section>
+<!--about------------------------------------------>
+      <div class="widget  about">
+        <div class="logo-column" >лого</div>
+        <div class="about-column">
+           <article>
+             <h3>Об аукционе</h3>
+               <p>  Здесь вы не встретите очередное пафосное собрание невероятно
+                    дорогого антиквариата. Наши лоты вообще не должны были попасть
+                    ни на один аукцион.Потому что кому нужен дневник девочки-
+                    подростка или картина,которую может нарисовать даже ребёнок?
+                    Кому нужны все эти странные вещи,созданные любителями?</p>
+
+               <p>Слишком сложные или, наоборот, слишком простые.
+               Опережающие своё время. 
+               В пух и прах растерзанные критиками. Непринятые и непонятые. 
+               Когда-то они казались просто неудачными.
+                Но, несмотря на критику, кажущуюся простоту или сложность, 
+                сейчас без этих лотов невозможно представить современную культуру.
+                 Когда в эти вещи не верил никто, продолжали верить их создатели. 
+                 И сейчас эти лоты стали культовыми.</p>
+
+                 <p>  Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
+                  Наши лоты вообще не должны были попасть ни на один аукцион.
+                   Потому что кому нужен дневник девочки-подростка или картина,
+                    которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи,
+                     созданные любителями?</p>
+           </article></div>
+        </div>
+    </main>
+
+    
+<!--footer------------------------------------------> 
+    <footer class="footer root__item">
+      <aside class="sidebar root__item">
+         <div class="grid1">
+-        <nav class="navigation">
+          <ul >
+               <li><a href="#endel">Главная</a></li>
+               <li ><a href="#calm">Посмотреть лоты</a></li>
+               <li ><a href="#headspace">об аукционе</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="grid3" >
+          <adress >
+            <a href="tel:+9 999 555 5555" id="tel">+9 999 555 5555</a><br>
+            <a href="mailto:info@sobaka.ge" id="email">info@sobaka.ge</a><br>
+            <span class="ymaps-geolink  " map>наб. Принсенграхт 263- 265, Амстердам</span>
+          </adress>
+      </div>
+      <h2 class="title">♥︎♥︎♥︎</h2>
+      </aside>
+    </footer>
+  </body>
 </html>
+
