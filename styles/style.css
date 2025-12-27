@@ -7,7 +7,7 @@
     "cover"
     "lots "
     "about "
-    'footers ';
+    "footers";
   gap: 5px;
   box-sizing: flex;
   margin: 0;
@@ -17,6 +17,8 @@
   background-color:#fff;
   width: 1100px;
   height: 3280px;
+  border: red;
+ border-style: dotted;
 }
 
 div {
@@ -41,40 +43,53 @@ div {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  ".  .  .  .  .  . header_logo .   .  .  header_adress header_adress "
+  ". header_nav header_nav header_nav header_nav . header_logo .   .   . header_adress header_adress "
+  ".  .  .  .  .  . header_logo .   .  .  header_adress header_adress "
   gap: 5px;
-  min-height: calc(100vh - 100px);
   margin:0;
   padding:0;
    box-sizing: border-box;
-   justify-self:center;
+   justify-self:start;
   /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
  align-self:normal;
  justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
  align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
+ border: red;
+ border-style: dotted;
  
 }
 /*-nav---logo--adress*/
-.grid1 {
-  grid-column:1/5;
+.header_nav{
+  grid-area: header_nav;
+  grid-column:1/7;
   grid-row: 1/4;
   color: white;
   background-color: blueviolet;
+   display: inline;
 
 }
 
-.grid2 {
-  grid-column: 5/6;
+.header_logo {
+  grid-column: 6/7;
   grid-row: 1/4;
   background-color: pink;
+  height: 105px;
+  width: 148px;
 }
 
-.grid3 {
- grid-column: 7/12;
+.header_adress {
+ grid-column: 10/13;
   grid-row: 1/4;
   background-color: #6dc1fd;
+  display: block;
   
 }
 
+
+.nav li{
+   display:inline-block;
+}
 
 /*--lots--------*/
 
@@ -92,7 +107,7 @@ div {
  justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
  align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
  box-sizing: border-box;
- height: 723px;
+ height: 715px;
  grid-area:lots;
 }
 /*----title--*/ 
@@ -136,7 +151,7 @@ div {
 
 /*---cover--*/
 .cover {
-  height: 293px;
+  height: 748px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -146,7 +161,6 @@ div {
   padding:0;
   /*box-sizing: border-box;--*/
   grid-area:cover;
-
   justify-self:center;
   /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
  align-self:normal;
@@ -258,7 +272,7 @@ div {
   margin:0;
   padding:0;
    box-sizing: border-box;
-   height: 595px;
+   height: 588px;
    justify-self:center;
   /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
   align-self:normal;
@@ -309,21 +323,9 @@ div {
 }
 
 
-/*-------------------------*/
-/*-.widget::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgb(0 0 0/0.4);
-}
 
-.widget_position_top {
-  
-  grid-area:widget_position_top;
 
-}-/*
-
-.about {
+/*.about {
  
 }
 /*------footer------*/
@@ -345,7 +347,7 @@ div {
  align-self:normal;
  justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
  align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
- 
+ position: sticky;
 }
 
 /*-nav---logo--adress*/
@@ -354,14 +356,15 @@ div {
   grid-row: 2/3;
   color:black;
   background-color: blueviolet;
+  display: block;
 
 }
 .footer_contacts {
   grid-column:1/6;
   grid-row: 2/3;
   color:black;
-  background-color: blue;
-  display: flex;
+  background-color: black;
+  display:block;
 
 }
 .footer_socials {
