@@ -91,65 +91,9 @@ div {
    display:inline-block;
 }
 
-/*--lots--------*/
-
-.lots {
-  display: grid;
-  grid-template-columns: (12, 1fr);
-  grid-template-rows: (12, 1fr);
-  gap: 5px;
-  min-height: calc(100vh - 100px);
-  border: 1px solid black;
-  background-color: white;
-  justify-self:center;
-  /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
- align-self:normal;
- justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
- align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
- box-sizing: border-box;
- height: 715px;
- grid-area:lots;
-}
-/*----title--*/ 
-.grid10 {
-  display:grid;
-  grid-column: 1/9;
-  grid-row: 1/2;
-  background-color: #6dc1fd;
-  align-items: flex-start;
-  
-}
-
-.endel {
-  grid-column: 1/3;
-  grid-row: 2/11;
-  color: white;
-  background-color:green;
-  background-image: url(../images/card-lot-01.jpg);
-}
-.calm {
- grid-column: 4/6;
-  grid-row: 2/11;
-  background-color: pink;
-  background-image: url(../images/card-lot-02.jpg);
-  /*background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);*/
-}
-
-.headspace {
-  grid-column: 7/10;
-  grid-row: 2/11;
-  background-color: #6dc1fd;
-  background-image: url(../images/card-lot-03.jpg)
-   /* этот блок ближе других z-index: 1;*/
-}
-/*--more--*/
-.more{
- grid-column: 7/10;
- grid-row: 10/12;
-}
 
 
-/*---cover--*/
+/*---cover--------------------------*/
 .cover {
   height: 748px;
   display: grid;
@@ -204,7 +148,7 @@ div {
    font-size:100px;
 }
 
-/*---------Аукцион вещей в которые никто не верил---------------------------------*/
+/*---Аукцион вещей в которые никто не верил---*/
 .grid8{
   grid-column: 1/5;
   grid-row: 5/6;
@@ -223,6 +167,66 @@ div {
   border: 2px  solid white;
   border-radius: 10px;
 }
+
+
+/*--lots-----------------------------------------*/
+
+.lots {
+  display: grid;
+  grid-template-columns: (12, 1fr);
+  grid-template-rows: (12, 1fr);
+  gap: 5px;
+  min-height: calc(100vh - 100px);
+  border: 1px solid black;
+  background-color: white;
+  justify-self:center;
+  /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
+ align-self:normal;
+ justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
+ align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
+ box-sizing: border-box;
+ height: 715px;
+ grid-area:lots;
+}
+/*----title--*/ 
+.title_lots{
+  display:grid;
+  grid-column: 1/9;
+  grid-row: 1/2;
+  background-color: #6dc1fd;
+  align-items: flex-start;
+  
+}
+
+.endel_lots {
+  grid-column: 1/3;
+  grid-row: 2/11;
+  color: white;
+  background-color:green;
+  background-image: url(../images/card-lot-01.jpg);
+}
+.calm_lots {
+ grid-column: 4/6;
+  grid-row: 2/11;
+  background-color: pink;
+  background-image: url(../images/card-lot-02.jpg);
+  /*background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);*/
+}
+
+.headspace_lots {
+  grid-column: 7/10;
+  grid-row: 2/11;
+  background-color: #6dc1fd;
+  background-image: url(../images/card-lot-03.jpg)
+   /* этот блок ближе других z-index: 1;*/
+}
+/*--more--*/
+.more_{
+ grid-column: 7/10;
+ grid-row: 10/12;
+}
+
+
 
 /**************************/
 
