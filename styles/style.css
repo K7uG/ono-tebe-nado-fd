@@ -323,16 +323,21 @@ div {
   color: aqua;
   font-size: 28px;
   border: 2px solid red;
-  border-radius: 10px;
+  
    width: 148px;
   height: 114px;
+  
 }
+
+
 
 .logo_circle_about {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: blue;
+  background: black;
+  
+  
 }
 
 .about-column_about {
@@ -398,4 +403,5 @@ div {
   height: 48px;
   border-radius: 50%;
   background: blue;
+  
 }
