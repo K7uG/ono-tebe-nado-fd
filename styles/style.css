@@ -8,7 +8,7 @@
     "lots "
     "about "
     "footers";
-    
+
   margin: 0;
   padding: 0;
   color: black;
@@ -16,7 +16,7 @@
   height: 3028px;
   border: red;
   border-style: dotted;
-  font-family: 'Regular', 'Raleway';
+  font-family: "Regular", "Raleway";
 }
 
 div {
@@ -27,7 +27,6 @@ div {
   text-transform: lowercase;
   margin: 0;
   padding: 0;
-
 }
 
 .title {
@@ -54,11 +53,11 @@ div {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap:0;
+  gap: 0;
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-family: 'Regular', 'Raleway';
+  font-family: "Regular", "Raleway";
   box-sizing: border-box;
 }
 
@@ -70,28 +69,26 @@ div {
   color: white;
   background-color: blueviolet;
   display: inline;
-  justify-self:start;
-  
+  justify-self: start;
 }
 
 .header_logo {
-   grid-area: header_logo;
+  grid-area: header_logo;
   grid-column: 7/8;
   grid-row: 2/3;
   background-color: pink;
   height: 94.84px;
   width: 129.11px;
-  display:flex;
+  display: flex;
 }
 
 .header_adress {
-   grid-area: header_adress;
+  grid-area: header_adress;
   grid-column: 10/13;
   grid-row: 1/4;
   background-color: #6dc1fd;
   display: block;
   box-sizing: border-box;
-
 }
 
 .nav li {
@@ -105,7 +102,7 @@ div {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(14, 1fr);
   gap: 0;
-  margin:0 0 180px 0;
+  margin: 0 0 180px 0;
   padding: 0;
   /*box-sizing: border-box;--*/
   grid-area: cover;
@@ -114,8 +111,8 @@ div {
   /*align-self:normal;
  justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
   /*align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
-  justify-items:flex-start;
-  
+  justify-items: flex-start;
+
   box-sizing: border-box;
 }
 
@@ -126,9 +123,9 @@ div {
   background-color: pink;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   box-sizing: border-box;
-  gap:0;
+  gap: 0;
   height: 757px;
 }
 /* ----ОНО---*/
@@ -165,14 +162,11 @@ div {
   grid-row: 13/14;
   z-index: 1;
   color: #fff;
-  font-size: 28px;
+  font-size: 22px;
   box-sizing: border-box;
-  text-transform: lowercase;
+  text-transform: uppercase;
   margin: 0 0 12px;
-  font-weight: normal;
-  font-size: 16px;
 }
-
 
 /* ---------button-----------------------*/
 .cover_button {
@@ -185,42 +179,34 @@ div {
   width: 256px;
   height: 51px;
   box-sizing: border-box;
-  
-  
-   
-  
 }
 
 /* --lots-----------------------------------------*/
 
 .lots {
   display: grid;
-  grid-area:lots;
+  grid-area: lots;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap:25px;
+  gap: 25px;
   padding: 0;
-  margin:0 0 120px 0;
+  margin: 0 0 120px 0;
   border: 1px solid blue;
   background-color: white;
-    /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
+  /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
   /*align-self:normal;
  justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
   /*align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
   box-sizing: border-box;
-  height:723px;
-
- 
-
-
+  height: 723px;
 }
 /* ----title--*/
 .title_lots {
-  display:flex;
+  display: flex;
   grid-column: 1/3;
-    grid-row: 1/2;
+  grid-row: 1/2;
   background-color: #6dc1fd;
-  padding:0;
+  padding: 0;
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
@@ -229,37 +215,37 @@ div {
 
 .endel_lots {
   display: flex;
-  grid-column:1/4;
+  grid-column: 1/4;
   grid-row: 2/3;
   color: white;
   background-color: green;
   background-image: url(../images/card-lot-01.jpg);
   box-sizing: border-box;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 .calm_lots {
-   display: flex;
+  display: flex;
   grid-column: 4/7;
   grid-row: 2/3;
   background-color: pink;
   background-image: url(../images/card-lot-02.jpg);
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   /*background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);*/
 }
 
 .headspace_lots {
-   display:flex;
+  display: flex;
   grid-column: 7/11;
   grid-row: 2/3;
   background-color: #6dc1fd;
   background-image: url(../images/card-lot-03.jpg);
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   /* этот блок ближе других z-index: 1;*/
 }
 /* --more--*/
@@ -268,19 +254,19 @@ div {
   grid-row: 3/4;
   box-sizing: border-box;
   display: flex;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 /**************************/
 
 /* --------lots------------------------------------------------------------------*/
 .card {
-  display:flex;
+  display: flex;
   align-items: flex-start;
-  gap:25px;
+  gap: 25px;
   box-sizing: border-box;
- 
+
   padding: 0;
   margin: 0;
   color: #1e1e1e;
@@ -289,7 +275,6 @@ div {
   background-size: cover;
   width: 334px;
   height: 596px;
-  
 }
 
 .card__image {
@@ -316,42 +301,40 @@ div {
   grid-area: about;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-   margin:0;
+
   padding: 0;
   box-sizing: border-box;
   height: 595px;
   /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
-   border: 2px solid red;
-   margin:0 0 180px 0;
-   font-family: 'bold', 'Raleway';
+  border: 2px solid red;
+  margin: 0 0 180px 0;
+  font-family: "bold", "Raleway";
+}
 
- }
-
-.title_about{
-   display:inline;
+.title_about {
+  display: inline;
   z-index: 1;
-  color:black;
-   border: 1px solid red;
+  color: black;
+  border: 1px solid red;
   width: 241px;
   height: 47px;
-  margin:0;
+  margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 40px;
-  font-family: 'Regular', 'Raleway';
+  font-family: "Regular", "Raleway";
   box-sizing: border-box;
 }
-.about_p{
-margin: 100px 0 0 0px;
+.about_p {
+  margin: 100px 0 0 0px;
 }
-.article_about{
-margin: 40px 0 0 0;
-box-sizing: border-box;
+.article_about {
+  margin: 40px 0 0 0;
+  box-sizing: border-box;
 }
-
 
 .logo-column_about {
-  display:flex;
+  display: flex;
   grid-column: 2/3;
   grid-row: 1/6;
   z-index: 1;
@@ -360,8 +343,8 @@ box-sizing: border-box;
   height: 114px;
   margin: 0;
   padding: 0;
- box-sizing: border-box;
- }
+  box-sizing: border-box;
+}
 
 .logo_circle_about {
   display: flex;
@@ -371,30 +354,26 @@ box-sizing: border-box;
   height: 240px;
   border-radius: 50%;
   background: black;
-   margin: 0;
+  margin: 0;
   padding: 0;
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .about-column_about {
-  display:inline-table;
+  display: inline-table;
   grid-column: 4/13;
   grid-row: 3/10;
   z-index: 1;
   color: black;
   font: 20px normal;
- font-family: 'Regular', 'Raleway';
- 
+  font-family: "Regular", "Raleway";
+
   padding: 0;
-  margin:0;
+  margin: 0;
   width: 693px;
-  height:449px;
+  height: 449px;
   box-sizing: border-box;
- }
-
-
-
-
+}
 
 /* -footer------*/
 .footer {
@@ -405,16 +384,13 @@ box-sizing: border-box;
   grid-template-rows: repeat(3, 1fr);
   margin: 0;
   padding: 0;
-  gap:5px;
+  gap: 5px;
   box-sizing: border-box;
- 
-  
+
   /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
   /*align-self:normal; */
   /*justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
   /*align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
- 
-  
 }
 
 /* -nav---logo--adress*/
@@ -422,22 +398,21 @@ box-sizing: border-box;
   grid-column: 1/2;
   grid-row: 3/4;
   color: black;
-  display:inline-block;
-  margin:0 15px 0 0;
-  
+  display: inline-block;
+  margin: 0 15px 0 0;
 }
 
 .footer_nav {
-  display:flex;
+  display: flex;
   grid-column: 4/8;
   grid-row: 3/4;
   color: black;
   margin: 0;
   padding: 0;
-  }
+}
 
 .footer_socials {
-  display:-moz-grid-line;
+  display: -moz-grid-line;
   grid-column: 10/13;
   grid-row: 1/2;
   color: black;
@@ -454,5 +429,4 @@ box-sizing: border-box;
   height: 48px;
   border-radius: 50%;
   background: blue;
-  
 }
