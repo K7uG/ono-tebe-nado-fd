@@ -26,13 +26,7 @@ div {
   padding: 0;
 }
 
-.title {
-  z-index: 1;
-  margin: 0;
-  font-weight: normal;
-  font-size: 115px;
-  text-align: center;
-}
+
 
 .pixel-perfect-image {
   position: fixed;
@@ -122,13 +116,9 @@ ul.a {
   gap: 0;
   margin: 0 0 180px 0;
   padding: 165px 50px 50px 50px;
-  /*box-sizing: border-box;--*/
+  
   grid-area: cover;
-  /*justify-self:center;
-  /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
-  /*align-self:normal;
- justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
-  /*align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
+  
   justify-items: center;
   width: 100%;
   box-sizing: border-box;
@@ -148,54 +138,43 @@ ul.a {
   height: 757px;
 }
 
-/* ----ОНО---*/
-.cover_title_ono {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  color: #fff;
+.title_cover {
+  display: flex;
   z-index: 3;
   margin: 0;
-  padding: 0 15px 15px 0;
+  color: #fff;
   font-size: 100px;
   box-sizing: border-box;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 30px;
 
-  display: flex;
+}
+
+/* ----ОНО---*/
+.cover_title_ono {
+grid-column: 1/2;
+grid-row: 1/2;
+padding: 0 15px 15px 0;
+font-size: 100px;
+  
+
+  
 }
 /* ----ТЕБЕ---*/
 .cover_title_tebe {
-  grid-column: 4/9;
-  grid-row: 2/3;
-  color: #fff;
-  z-index: 3;
-  font-size: 100px;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 30px;
-
-  margin: 0;
-  padding: 0 0 20px 0;
-  display: flex;
+grid-column: 4/9;
+grid-row: 2/3;
+padding: 0 0 20px 0;
+  
 }
 
 /* ----НАДО---*/
 .cover_title_nado {
-  grid-column: 9/13;
-  grid-row: 3/4;
-  z-index: 3;
-  color: #fff;
-  font-size: 100px;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 30px;
-
-  margin: 0;
-  padding: 0 0 0 25px;
-  display: flex;
+grid-column: 9/13;
+grid-row: 3/4;
+padding: 0 0 0 25px;
+  
 }
 
 /* ---Аукцион вещей в которые никто не верил---*/
@@ -246,10 +225,7 @@ ul.a {
   margin: 0 0 120px 24px;
   width: 1052px;
 
-  /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
-  /*align-self:normal;
- justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
-  /*align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
+  
   box-sizing: border-box;
   height: 723px;
 }
