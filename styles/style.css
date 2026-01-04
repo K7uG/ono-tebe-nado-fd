@@ -308,12 +308,9 @@ ul.a {
   grid-row: 3/4;
   box-sizing: border-box;
   display: flex;
-
   margin: 0;
   padding: 5px 0 0 40px;
-
   font-size: 20px;
-  display: flex;
   color: black;
   font-weight: normal;
   justify-content: start;
