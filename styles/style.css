@@ -132,6 +132,7 @@ ul.a {
   justify-items: center;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* ----lotus---*/
@@ -161,7 +162,7 @@ ul.a {
 
   display: flex;
 }
-/*----ТЕБЕ---*/
+/* ----ТЕБЕ---*/
 .cover_title_tebe {
   grid-column: 4/9;
   grid-row: 2/3;
@@ -274,6 +275,7 @@ ul.a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .calm_lots {
@@ -285,6 +287,7 @@ ul.a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
 
   /*background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);*/
 }
@@ -300,6 +303,22 @@ ul.a {
   margin: 0;
   padding: 0;
   /* этот блок ближе других z-index: 1;*/
+  position: relative;
+}
+
+/* --overlay--*/
+.overlay {
+  position: absolute; /* Sit on top of the page content */
+
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  pointer-events: none;
 }
 
 /* --more--*/
@@ -417,7 +436,7 @@ p:first-letter {
   box-sizing: border-box;
 }
 
-/*------logo--*/
+/* ------logo--*/
 .logo-column_about {
   display: block;
   grid-column: 2/3;
@@ -443,7 +462,7 @@ p:first-letter {
   box-sizing: border-box;
 }
 
-/*----column--*/
+/* ----column--*/
 
 .about-column_about {
   display: flex;
