@@ -140,19 +140,20 @@ ul.a {
   grid-column: 1/13;
   grid-row: 1/5;
   background-image: url(../images/cover.jpg);
-   background-position:center; 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
   gap: 0;
   height: 757px;
 }
+
 /* ----ОНО---*/
 .cover_title_ono {
   grid-column: 1/2;
   grid-row: 1/2;
   color: #fff;
-  z-index: 1;
+  z-index: 3;
   margin: 0;
   padding: 0 15px 15px 0;
   font-size: 100px;
@@ -168,7 +169,7 @@ ul.a {
   grid-column: 4/9;
   grid-row: 2/3;
   color: #fff;
-  z-index: 1;
+  z-index: 3;
   font-size: 100px;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -184,7 +185,7 @@ ul.a {
 .cover_title_nado {
   grid-column: 9/13;
   grid-row: 3/4;
-  z-index: 1;
+  z-index: 3;
   color: #fff;
   font-size: 100px;
   box-sizing: border-box;
@@ -201,7 +202,7 @@ ul.a {
 .cover_subline {
   grid-column: 1/11;
   grid-row: 13/14;
-  z-index: 1;
+  z-index: 3;
   color: #fff;
   font-size: 22px;
   font-weight: normal;
@@ -219,7 +220,7 @@ ul.a {
 .cover_button {
   grid-column: 12/13;
   grid-row: 13/14;
-  z-index: 1;
+  z-index: 3;
   color: #fff;
   font-size: 22px;
   border: 2px solid white;
@@ -273,11 +274,11 @@ ul.a {
   grid-column: 1/4;
   grid-row: 2/3;
   background-image: url(../images/card-lot-01.jpg);
-  background-position:center ; 
+  background-position: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  position: relative; 
+  position: relative;
 }
 
 .calm_lots {
@@ -286,7 +287,7 @@ ul.a {
   grid-row: 2/3;
 
   background-image: url(../images/card-lot-02.jpg);
-   background-position:center ; 
+  background-position: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -301,7 +302,7 @@ ul.a {
   grid-row: 2/3;
 
   background-image: url(../images/card-lot-03.jpg);
-  background-position:center ; 
+  background-position: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -319,7 +320,7 @@ ul.a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   pointer-events: none;
 }
@@ -359,8 +360,6 @@ ul.a {
   width: 334px;
   height: 596px;
   justify-content: space-between;
-  
-
 }
 
 .card__image {
@@ -369,7 +368,6 @@ ul.a {
   z-index: 1;
   margin: 0;
   padding: 0;
-
 }
 
 .card__title {
@@ -380,6 +378,7 @@ ul.a {
   font-size: 22px;
   color: #fff;
   text-transform: uppercase;
+  z-index: 3;
 }
 
 .span {
@@ -391,7 +390,7 @@ ul.a {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  z-index: 1;
+  z-index: 3;
   color: #fff;
   align-items: end;
 }
@@ -489,7 +488,7 @@ p:first-letter {
 /* -footer------*/
 .footer {
   grid-area: footer;
-  
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -497,7 +496,6 @@ p:first-letter {
   padding: 2px 0 0 2px;
   gap: 0;
   box-sizing: border-box;
-
 
   /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
   /*align-self:normal; */
