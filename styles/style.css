@@ -3,11 +3,11 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-  "headers"
-  "cover "
-  "lots "
-  "about "
-  "footer";
+    "headers"
+    "cover "
+    "lots "
+    "about "
+    "footer";
   margin: 0;
   padding: 0;
   color: black;
@@ -134,22 +134,22 @@ ul.a {
 
 /* ----ОНО---*/
 .cover_title_ono {
-grid-column: 1/2;
-grid-row: 1/2;
-padding: 0 15px 15px 0;
-font-size: 100px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding: 0 15px 15px 0;
+  font-size: 100px;
 }
 /* ----ТЕБЕ---*/
 .cover_title_tebe {
-grid-column: 4/9;
-grid-row: 2/3;
-padding: 0 0 20px 0;
+  grid-column: 4/9;
+  grid-row: 2/3;
+  padding: 0 0 20px 0;
 }
 /* ----НАДО---*/
 .cover_title_nado {
-grid-column: 9/13;
-grid-row: 3/4;
-padding: 0 0 0 25px;
+  grid-column: 9/13;
+  grid-row: 3/4;
+  padding: 0 0 0 25px;
 }
 /* ---Аукцион вещей в которые никто не верил---*/
 .cover_subline {
@@ -235,7 +235,7 @@ padding: 0 0 0 25px;
   margin: 0;
   padding: 0;
   position: relative;
- }
+}
 
 .headspace_lots {
   display: flex;
@@ -246,19 +246,19 @@ padding: 0 0 0 25px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-    position: relative;
+  position: relative;
 }
 /* --overlay--*/
 .overlay {
-  position: absolute; 
-  width: 100%; 
-  height: 100%; 
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6); 
-  z-index: 2; 
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
   pointer-events: none;
 }
 /* --more--*/
@@ -422,7 +422,7 @@ p:first-letter {
   padding: 2px 0 0 2px;
   gap: 0;
   box-sizing: border-box;
- }
+}
 
 /* -nav---logo--adress*/
 .footer_contacts {
