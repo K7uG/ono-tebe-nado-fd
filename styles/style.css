@@ -3,12 +3,11 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    "headers"
-    "cover "
-    "lots "
-    "about "
-    "footer";
-
+  "headers"
+  "cover "
+  "lots "
+  "about "
+  "footer";
   margin: 0;
   padding: 0;
   color: black;
@@ -26,17 +25,6 @@ div {
   padding: 0;
 }
 
-
-
-.pixel-perfect-image {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.5;
-  filter: sepia(0.6);
-}
-
 /* ---------header------*/
 .headers {
   grid-area: headers;
@@ -52,7 +40,6 @@ div {
   box-sizing: border-box;
 }
 
-/* -nav---logo--adress*/
 .header_nav {
   grid-area: header_nav;
   grid-column: 1/7;
@@ -86,7 +73,6 @@ ul.a {
   grid-area: header_logo;
   grid-column: 7/9;
   grid-row: 2/3;
-
   height: 104.11px;
   width: 129.11px;
   display: flex;
@@ -98,7 +84,6 @@ ul.a {
   grid-area: header_adress;
   grid-column: 9/12;
   grid-row: 1/4;
-
   display: block;
   box-sizing: border-box;
   font-size: 18px;
@@ -106,8 +91,7 @@ ul.a {
   margin: 0 0 0 55px;
   padding: 0;
 }
-
-/* ---cover--------------------------*/
+/* ---cover--*/
 .cover {
   height: 757px;
   display: grid;
@@ -116,9 +100,7 @@ ul.a {
   gap: 0;
   margin: 0 0 180px 0;
   padding: 165px 50px 50px 50px;
-  
   grid-area: cover;
-  
   justify-items: center;
   width: 100%;
   box-sizing: border-box;
@@ -148,7 +130,6 @@ ul.a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 30px;
-
 }
 
 /* ----ОНО---*/
@@ -157,26 +138,19 @@ grid-column: 1/2;
 grid-row: 1/2;
 padding: 0 15px 15px 0;
 font-size: 100px;
-  
-
-  
 }
 /* ----ТЕБЕ---*/
 .cover_title_tebe {
 grid-column: 4/9;
 grid-row: 2/3;
 padding: 0 0 20px 0;
-  
 }
-
 /* ----НАДО---*/
 .cover_title_nado {
 grid-column: 9/13;
 grid-row: 3/4;
 padding: 0 0 0 25px;
-  
 }
-
 /* ---Аукцион вещей в которые никто не верил---*/
 .cover_subline {
   grid-column: 1/11;
@@ -194,8 +168,7 @@ padding: 0 0 0 25px;
   justify-self: start;
   transform: scale(1, 1);
 }
-
-/* ---------button-----------------------*/
+/* ---------button----*/
 .cover_button {
   grid-column: 12/13;
   grid-row: 13/14;
@@ -212,9 +185,7 @@ padding: 0 0 0 25px;
   padding: 0;
   margin: 0;
 }
-
-/* --lots-----------------------------------------*/
-
+/* --lots--*/
 .lots {
   display: grid;
   grid-area: lots;
@@ -224,8 +195,6 @@ padding: 0 0 0 25px;
   padding: 0 0 25px 0;
   margin: 0 0 120px 24px;
   width: 1052px;
-
-  
   box-sizing: border-box;
   height: 723px;
 }
@@ -240,7 +209,6 @@ padding: 0 0 0 25px;
   font-size: 40px;
   text-transform: uppercase;
   box-sizing: border-box;
-
   height: 47px;
   width: 121px;
 }
@@ -261,46 +229,38 @@ padding: 0 0 0 25px;
   display: flex;
   grid-column: 4/7;
   grid-row: 2/3;
-
   background-image: url(../images/card-lot-02.jpg);
   background-position: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   position: relative;
-
-  /*background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);*/
-}
+ }
 
 .headspace_lots {
   display: flex;
   grid-column: 7/11;
   grid-row: 2/3;
-
   background-image: url(../images/card-lot-03.jpg);
   background-position: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* этот блок ближе других z-index: 1;*/
-  position: relative;
+    position: relative;
 }
-
 /* --overlay--*/
 .overlay {
-  position: absolute; /* Sit on top of the page content */
-
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 2; 
   pointer-events: none;
 }
-
 /* --more--*/
 .more_lots {
   grid-column: 1/4;
@@ -318,10 +278,7 @@ padding: 0 0 0 25px;
 .font {
   border-bottom: 1px black solid;
 }
-
-/**************************/
-
-/* --------lots------------------------------------------------------------------*/
+/* -lots----*/
 .card {
   display: flex;
   flex-direction: column;
@@ -330,7 +287,6 @@ padding: 0 0 0 25px;
   padding: 48px 40px 48px 40px;
   margin: 0;
   color: #1e1e1e;
-
   background-repeat: no-repeat;
   background-size: cover;
   width: 334px;
@@ -370,7 +326,6 @@ padding: 0 0 0 25px;
   color: #fff;
   align-items: end;
 }
-
 /* ---------about---------*/
 .about {
   display: grid;
@@ -381,7 +336,6 @@ padding: 0 0 0 25px;
   box-sizing: border-box;
   height: 595px;
   width: 100%;
-  /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
   margin: 0 0 180px 0;
 }
 
@@ -417,7 +371,6 @@ p:first-letter {
 .article_about {
   box-sizing: border-box;
 }
-
 /* ------logo--*/
 .logo-column_about {
   display: block;
@@ -443,9 +396,7 @@ p:first-letter {
   padding: 0;
   box-sizing: border-box;
 }
-
 /* ----column--*/
-
 .about-column_about {
   display: flex;
   grid-column: 3/13;
@@ -460,7 +411,6 @@ p:first-letter {
   height: 449px;
   box-sizing: border-box;
 }
-
 /* -footer------*/
 .footer {
   grid-area: footer;
@@ -472,12 +422,7 @@ p:first-letter {
   padding: 2px 0 0 2px;
   gap: 0;
   box-sizing: border-box;
-
-  /*Свойство justify-self управляет выравниванием по направлению колонок, а align-self — по направлению строк*/
-  /*align-self:normal; */
-  /*justify-items:flex-start;/*Элементы внутри каждой области растягиваются на весь её размер по вертикали.*/
-  /*align-items:auto;/*Элементы внутри каждой области растягиваются на весь её размер по горизонтали.*/
-}
+ }
 
 /* -nav---logo--adress*/
 .footer_contacts {
@@ -490,7 +435,6 @@ p:first-letter {
   box-sizing: border-box;
   font-size: 18px;
   font-weight: normal;
-
   justify-self: start;
   align-self: start;
 }
@@ -522,7 +466,6 @@ p:first-letter {
   width: 240px;
   height: 48px;
   box-sizing: border-box;
-
   justify-self: end;
   align-self: start;
 }
