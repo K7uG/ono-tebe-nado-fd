@@ -8,34 +8,33 @@
     "lots "
     "about "
     "footer";
-  margin: 0;
+  
   padding: 0;
   color: black;
-  width: 1100px;
-  height: 3028px;
+  width: 100%;
+  max-width: 1100px;
+  
+   min-height: 100vh;
+   max-height:3028px;
 }
 
 div {
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
-  font-weight: 800;
   text-transform: lowercase;
-  margin: 0;
-  padding: 0;
 }
 
 /* ---------header------*/
 .headers {
   grid-area: headers;
-  height: 293px;
+  min-height: 10%;
+  max-height: 293px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 0;
-  margin: 0;
-  padding: 92px 50px 96px 22px;
   font-size: 18px;
   box-sizing: border-box;
 }
@@ -49,8 +48,7 @@ div {
   justify-content: start;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
+   
 }
 
 .nav li {
@@ -73,10 +71,10 @@ ul.a {
   grid-area: header_logo;
   grid-column: 7/9;
   grid-row: 2/3;
-  height: 104.11px;
+  max-height: 104.11px;
   width: 129.11px;
   display: flex;
-  margin: 0 130px 0 0;
+  margin: 0 9em 0 0;
   padding: 0;
 }
 
@@ -88,8 +86,9 @@ ul.a {
   box-sizing: border-box;
   font-size: 18px;
   font-weight: normal;
-  margin: 0 0 0 55px;
+  margin: 0 0 0 12%;
   padding: 0;
+  
 }
 /* ---cover--*/
 .cover {
@@ -98,27 +97,17 @@ ul.a {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 0;
-  margin: 0 0 180px 0;
+  margin: 0 0 16.7% 0;
   padding: 165px 50px 50px 50px;
   grid-area: cover;
   justify-items: center;
   width: 100%;
   box-sizing: border-box;
   position: relative;
+    background-image: url(../images/cover.jpg);
 }
 
 /* ----lotus---*/
-.cover_image {
-  grid-column: 1/13;
-  grid-row: 1/5;
-  background-image: url(../images/cover.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  gap: 0;
-  height: 757px;
-}
 
 .title_cover {
   display: flex;
@@ -179,11 +168,11 @@ ul.a {
   width: 256px;
   height: 51px;
   box-sizing: border-box;
-
   font-weight: normal;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content:center;
+  
 }
 /* --lots--*/
 .lots {
@@ -192,11 +181,11 @@ ul.a {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 25px;
-  padding: 0 0 25px 0;
-  margin: 0 0 120px 24px;
-  width: 1052px;
+  padding: 0;
+  margin:  auto  auto 11% auto;
+  max-width: 1052px;
   box-sizing: border-box;
-  height: 723px;
+  max-height: 723px;
 }
 /* ----title--*/
 .title_lots {
@@ -204,7 +193,7 @@ ul.a {
   grid-column: 1/4;
   grid-row: 1/2;
   margin: 0;
-  padding: 0 0 0 80px;
+  padding: 0 0 0 12.5%;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
@@ -382,6 +371,9 @@ p:first-letter {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ 
+  justify-content:center;
+ 
 }
 
 .logo_circle_about {
@@ -395,6 +387,9 @@ p:first-letter {
   margin: 0 72px 100px 0;
   padding: 0;
   box-sizing: border-box;
+ 
+  justify-content:center;
+  
 }
 /* ----column--*/
 .about-column_about {
@@ -417,7 +412,7 @@ p:first-letter {
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   margin: 0 50px 82px 50px;
   padding: 2px 0 0 2px;
   gap: 0;
@@ -474,6 +469,5 @@ p:first-letter {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  margin: 0;
-  padding: 0;
+ 
 }
