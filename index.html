@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=c28c1860-1ea7-42d0-ae99-60875bb1591a&lang=ru_RU&load=Geolink"
-      type="text/javascript"
-    ></script>
+      type="text/javascript"></script>
   </head>
 
   <body class="root">
@@ -20,49 +18,47 @@
     <!--header----------------------class="grid1"-------------------->
     <header>
       <div class="headers">
-        <div class="header_nav">
+        <div class="header_nav ">
           <nav>
             <ul class="nav a">
-              <li class="nobull"><a href="#endel">Главная</a></li>
+              <li class="nobull "><a href="#endel" class='link-active '>Главная</a></li>
               <li><a href="#calm ">Посмотреть лоты</a></li>
-              <li><a href="#headspace ">об аукционе</a></li>
+              <li><a href="#headspace">об аукционе</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="header_logo">
-          <a href="http://127.0.0.1:5501/index.html">
-            <img class="card__image" src="./images/logo-black.svg" alt="лого"
-          /></a>
+          <a><img class="card__image" src="./images/logo-black.svg" alt="лого"/></a>
         </div>
 
-        <div class="header_adress">
+        
+          <adress class="header_adress">
           <a href="tel:+99995555555" id="tel">+99995555555</a><br />
           <a href="mailto:info@sobaka.ge" id="email">info@sobaka.ge</a><br />
           <span class="ymaps-geolink"
             >наб. Принсенграхт 263-<br />
-            265, Амстердам</span
-          >
-        </div>
+            265, Амстердам</span>
+            </adress>
+        
       </div>
     </header>
 
     <!--main------------->
     <main>
       <!--cover------->
-      <div class="cover_image cover">
-        <div class="cover_title_ono title_cover">оно</div>
-        <br />
-        <div class="cover_title_tebe title_cover">тебе</div>
-        <div class="cover_title_nado title_cover">надо</div>
-        <div class="cover_subline">Аукцион вещей, в которые никто не верил</div>
-        <div class="cover_button">Сделать ставку</div>
+      <section class="cover_image cover">
+        <div class="aligned-text_left title_cover"><span>оно</span></div>
+        <div class="aligned-text_center title_cover"><span>тебе</span></div>
+        <div class="aligned-text_right title_cover"><span>надо</span></div>
+        <div class="cover_subline"><p>Аукцион вещей, в которые никто не верил</p></div>
+        <div class="cover_button"><button class="transparent-button ">Сделать ставку</button></div>
         <div class="overlay"></div>
-      </div>
+      </section>
 
       <!--lots--->
       <section class="lots">
-        <div class="title_lots"><h4>лоты</h4></div>
+        <div class="title_lots"><h2>лоты</h2></div>
         <article class="card endel_lots">
           <h3 class="card__title span">
             Фильм режиссёра, который бросил киношколу
@@ -104,7 +100,7 @@
         <div class="more_lots"><a class="font">посмотреть больше</a></div>
       </section>
       <!--about----->
-      <div class="about">
+      <section class="about">
         <div class="logo_circle_about">
           <img
             src="images/logo-white.svg"
@@ -134,7 +130,7 @@
             </p>
           </article>
         </div>
-      </div>
+      </section>
     </main>
 
     <!--footer------------------------------------------>
