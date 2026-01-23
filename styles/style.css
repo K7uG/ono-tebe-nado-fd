@@ -12,7 +12,7 @@
 
   padding: 0;
   color: black;
-  height: 100vh;
+  height:100vh;
 }
 
 /* ---------header------*/
@@ -192,7 +192,7 @@ ul.a {
 
   gap: 25px;
   padding: 0;
-  margin: auto auto 120px auto;
+  margin: 0 auto 120px auto;
   max-width: 1052px;
   box-sizing: border-box;
   min-height: 723px;
@@ -339,16 +339,23 @@ ul.a {
   overflow-wrap: break-word;
 }
 
-.about_beetwen_title_p {
+/*.about_beetwen_title_p {
   margin: 100px 0 0 0px;
+}*/
+article .title_about + p {
+  margin-top: 100px;
 }
 
-.about_between_p {
+/*.about_between_p {
   margin: 24px 0 0 0px;
+}*/
+
+.article_about p + p {
+  margin-top: 24px;
 }
 
 .article_about {
-  display: block;
+  display:inline-block;
 }
 /* ------logo--*/
 .logo-column_about {
