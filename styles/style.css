@@ -12,16 +12,14 @@
 
   padding: 0;
   color: black;
-  height:100vh;
+  height: 100vh;
 }
 
-.main{
+.main {
   margin: 0;
   padding: 0;
   min-height: 2555px;
-
 }
-
 /* ---------header------*/
 .headers {
   grid-area: headers;
@@ -82,21 +80,34 @@ ul.a {
   align-items: center;
 }
 
-.header_adress {
-  grid-area: header_adress;
+.address-block {
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 0;
+  display: block;
+  color: black;
+}
+
+.address-block__header {
   grid-column: 3;
   grid-row: 1;
-  display: flex;
-  box-sizing: border-box;
-  font-size: 18px;
-  font-weight: normal;
   margin: 0 0 0 186px;
-  padding: 0;
   justify-content: flex-end;
   align-items: start;
   flex-direction: column;
   line-height: 0.7;
 }
+
+.address-block_footer {
+  grid-column: 1/2;
+  grid-row: 1;
+  margin: 0;
+  justify-self: start;
+  align-self: start;
+  align-items: flex-start;
+}
+
 /* ---cover--*/
 .cover {
   min-height: 757px;
@@ -301,10 +312,8 @@ ul.a {
   color: #fff;
   text-transform: uppercase;
   z-index: 3;
-   text-decoration: underline;
+  text-decoration: underline;
 }
-
-
 
 .card__text {
   display: flex;
@@ -361,7 +370,7 @@ article .title_about + p {
 }
 
 .article_about {
-  display:inline-block;
+  display: inline-block;
 }
 /* ------logo--*/
 .logo-column_about {
