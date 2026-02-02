@@ -111,14 +111,15 @@ ul.a {
 /* ---cover--*/
 .cover {
   min-height: 757px;
-  display: grid;
+  display: block;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 0;
   margin: 0 0 180px 0;
   padding: 165px 50px 50px 50px;
   grid-area: cover;
-  justify-items: center;
+
+  z-index: 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -134,7 +135,6 @@ ul.a {
 }
 
 .title_cover {
-  display: flex;
   z-index: 3;
   margin: 0;
   color: #fff;
@@ -143,31 +143,50 @@ ul.a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 30px;
+  display: block;
+  margin: 0 0 106px 0;
 }
+
+
 
 /* ----ОНО---*/
 .aligned-text_left {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  padding: 0 15px 15px 0;
+  /*grid-column: 1/2;
+  grid-row: 1/2;*/
+  padding: 0 0 17px 0;
   font-size: 100px;
+
+  display: block;
 }
 /* ----ТЕБЕ---*/
 .aligned-text_center {
-  grid-column: 4/9;
-  grid-row: 2/3;
+  /*grid-column: 4/9;
+  grid-row: 2/3;*/
   padding: 0 0 20px 0;
+  display: block;
+  text-align: center;
 }
+
 /* ----НАДО---*/
 .aligned-text_right {
-  grid-column: 9/13;
-  grid-row: 3/4;
-  padding: 0 0 0 25px;
+  /*grid-column: 9/13;
+  grid-row: 3/4;*/
+  padding: 0;
+  display: block;
+  text-align: right;
+  justify-content: end;
 }
+
+.container {
+  display: flex; /* Используем flexbox для выравнивания */
+  
+  align-items: center; /* Выравниваем по центру */
+}
+
 /* ---Аукцион вещей в которые никто не верил---*/
 .cover_subline {
-  grid-column: 1/11;
-  grid-row: 13/14;
+  /*grid-column: 1/11;
+  grid-row: 13/14;*/
   z-index: 3;
   color: #fff;
   font-size: 22px;
@@ -175,32 +194,30 @@ ul.a {
   box-sizing: border-box;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding: 0 95px 0 0;
   word-spacing: 20px;
   display: flex;
-  justify-self: start;
+  
   transform: scale(1, 1);
-  justify-content: center;
-  align-items: center;
+
+  
 }
 /* ---------button----*/
-.cover_button {
-  grid-column: 12/13;
-  grid-row: 13/14;
-  z-index: 3;
-}
+
 .transparent-button {
   width: 256px; /* Ширина кнопки */
   height: 51px; /* Высота кнопки */
   border: 1px solid white; /* Белая граница толщиной 1 пиксель */
   background: transparent; /* Прозрачный фон */
-  border-radius: 5px; /* Скругленные углы (можно убрать, если не нужно) */
+ /* border-radius: 5px; /* Скругленные углы (можно убрать, если не нужно) */
   cursor: pointer; /* Изменение курсора при наведении */
   padding: 0; /* Убираем отступы */
   outline: none; /* Убираем выделение при клике */
   color: #fff;
   text-transform: uppercase;
   font-size: 22px;
+  z-index: 3;
+ 
 }
 
 /* --lots--*/
