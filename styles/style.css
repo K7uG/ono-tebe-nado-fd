@@ -147,8 +147,6 @@ ul.a {
   margin: 0 0 106px 0;
 }
 
-
-
 /* ----ОНО---*/
 .aligned-text_left {
   /*grid-column: 1/2;
@@ -179,7 +177,7 @@ ul.a {
 
 .container {
   display: flex; /* Используем flexbox для выравнивания */
-  
+
   align-items: center; /* Выравниваем по центру */
 }
 
@@ -197,10 +195,8 @@ ul.a {
   padding: 0 95px 0 0;
   word-spacing: 20px;
   display: flex;
-  
-  transform: scale(1, 1);
 
-  
+  transform: scale(1, 1);
 }
 /* ---------button----*/
 
@@ -209,7 +205,7 @@ ul.a {
   height: 51px; /* Высота кнопки */
   border: 1px solid white; /* Белая граница толщиной 1 пиксель */
   background: transparent; /* Прозрачный фон */
- /* border-radius: 5px; /* Скругленные углы (можно убрать, если не нужно) */
+  /* border-radius: 5px; /* Скругленные углы (можно убрать, если не нужно) */
   cursor: pointer; /* Изменение курсора при наведении */
   padding: 0; /* Убираем отступы */
   outline: none; /* Убираем выделение при клике */
@@ -217,7 +213,6 @@ ul.a {
   text-transform: uppercase;
   font-size: 22px;
   z-index: 3;
- 
 }
 
 /* --lots--*/
