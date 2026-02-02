@@ -112,13 +112,9 @@ ul.a {
 .cover {
   min-height: 757px;
   display: block;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 0;
   margin: 0 0 180px 0;
   padding: 165px 50px 50px 50px;
   grid-area: cover;
-
   z-index: 0;
   width: 100%;
   box-sizing: border-box;
@@ -144,6 +140,7 @@ ul.a {
   letter-spacing: 30px;
   display: block;
   margin: 0 0 106px 0;
+  padding: 0;
 }
 
 /* ----ОНО---*/
@@ -152,14 +149,15 @@ ul.a {
   grid-row: 1/2;*/
   padding: 0 0 17px 0;
   font-size: 100px;
-
   display: block;
+  margin: 0;
 }
 /* ----ТЕБЕ---*/
 .aligned-text_center {
   /*grid-column: 4/9;
   grid-row: 2/3;*/
-  padding: 0 0 20px 0;
+  padding: 0 0 15px 25px;
+  margin: 0;
   display: block;
   text-align: center;
 }
@@ -171,12 +169,11 @@ ul.a {
   padding: 0;
   display: block;
   text-align: right;
-  justify-content: end;
+  margin: 0;
 }
 
 .container {
   display: flex; /* Используем flexbox для выравнивания */
-
   align-items: center; /* Выравниваем по центру */
 }
 
@@ -234,7 +231,7 @@ ul.a {
   margin: 0;
   padding: 0 0 0 12.5%;
   font-weight: bold;
-  font-size: 25.5px;
+  font-size: 40px;
   text-transform: uppercase;
   box-sizing: border-box;
 }
