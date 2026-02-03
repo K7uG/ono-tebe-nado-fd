@@ -430,11 +430,6 @@ article .title_about + p {
 }
 
 /* -nav---logo--adress*/
-.address-block_footer {
-  grid-column: 1/2;
-  grid-row: 1;
-  margin: 0;
-}
 
 .footer_nav {
   display: block;
