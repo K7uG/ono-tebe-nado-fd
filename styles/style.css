@@ -131,7 +131,6 @@ ul.a {
 }
 
 .title_cover {
-  z-index: 3;
   color: #fff;
   font-size: 100px;
   box-sizing: border-box;
@@ -141,6 +140,8 @@ ul.a {
   display: block;
   margin: 0 0 106px 0;
   padding: 0;
+  z-index: 3;
+  position: relative;
 }
 
 /* ----ОНО---*/
@@ -156,10 +157,11 @@ ul.a {
 .aligned-text_center {
   /*grid-column: 4/9;
   grid-row: 2/3;*/
-  padding: 0 0 15px 25px;
+  padding: 0 0 15px 0;
   margin: 0;
   display: block;
   text-align: center;
+  margin-right: -30px;
 }
 
 /* ----НАДО---*/
@@ -167,9 +169,10 @@ ul.a {
   /*grid-column: 9/13;
   grid-row: 3/4;*/
   padding: 0;
-  display: block;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
+  margin-right: -30px;
 }
 
 .container {
@@ -188,10 +191,9 @@ ul.a {
   box-sizing: border-box;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 95px 0 0;
-  word-spacing: 20px;
+  padding: 0 106px 0 0;
+  word-spacing: 18.6px;
   display: flex;
-
   transform: scale(1, 1);
 }
 /* ---------button----*/
@@ -212,11 +214,7 @@ ul.a {
 }
 
 /* --lots--*/
-.lots {
-  display: grid;
-  grid-area: lots;
-
-  gap: 25px;
+.lots-cards {
   padding: 0;
   margin: 0 auto 120px auto;
   max-width: 1052px;
@@ -228,7 +226,7 @@ ul.a {
   display: flex;
   grid-column: 1/4;
   grid-row: 1;
-  margin: 0;
+  margin: 0 0 27px -90px;
   padding: 0 0 0 12.5%;
   font-weight: bold;
   font-size: 40px;
@@ -275,17 +273,32 @@ ul.a {
   grid-row: 3;
   box-sizing: border-box;
   display: flex;
-  margin: 0;
+  margin: 0 0 0 40px;
   padding: 0;
   font-size: 20px;
   color: black;
   font-weight: normal;
   justify-content: start;
+
 }
 
 .font {
   border-bottom: 1px black solid;
 }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Перенос на новую строку */
+  flex-direction: row;
+  gap: 25px;
+  padding: 0;
+  margin: 0 auto 30px auto;
+  max-width: 1052px;
+  box-sizing: border-box;
+  min-height: 596px;
+  list-style: none;
+}
+
 /* -lots----*/
 .card {
   display: flex;
@@ -297,7 +310,7 @@ ul.a {
   color: #1e1e1e;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 334px;
+  max-width: 334px;
   min-height: 596px;
   justify-content: space-between;
   position: relative;
