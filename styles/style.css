@@ -72,8 +72,8 @@ ul.a {
   grid-area: header_logo;
   grid-column: 2;
   grid-row: 1;
-  max-height: 104.11px;
-  width: 129.11px;
+  max-height: 105px;
+  width: 148px;
   display: flex;
   margin: 0 0 0 30px;
   padding: 0;
@@ -96,7 +96,7 @@ ul.a {
   justify-content: flex-end;
   align-items: start;
   flex-direction: column;
-  line-height: 0.7;
+  line-height: 1.2;
 }
 
 .address-block_footer {
@@ -279,7 +279,6 @@ ul.a {
   color: black;
   font-weight: normal;
   justify-content: start;
-
 }
 
 .font {
@@ -344,6 +343,7 @@ ul.a {
   z-index: 3;
   color: #fff;
   align-items: end;
+  line-height: 1.2;
 }
 /* ---------about---------*/
 .about {
@@ -403,6 +403,7 @@ article .title_about + p {
   height: 114px;
   padding: 0;
   margin: 0;
+
   box-sizing: border-box;
 }
 
