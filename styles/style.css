@@ -1,3 +1,6 @@
+html {
+  block-size: 100%;
+}
 .root {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,7 +15,7 @@
 
   padding: 0;
   color: black;
-  height: 100vh;
+  height: 100%;
 }
 
 .main {
